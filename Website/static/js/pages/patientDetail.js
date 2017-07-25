@@ -32,6 +32,12 @@ $(document).ready(function (e) {
 	$("#myTabSmall").hide();
 	}
 
+	if(window.innerWidth<1000){
+	$("#mysidebar").hide();
+	$("#mycontent").show();
+	}
+
+
 //    PatientDetailTable();
     showRelationInfo();
     getAppInfoNum();
@@ -39,6 +45,9 @@ $(document).ready(function (e) {
     calculateCATSum();
     calculateMBQSum1();
     calculateMBQSum2();
+
+    changehref();
+    showAPP();
 
     // for diseaseType
     diseaseType1("newD");
@@ -119,6 +128,14 @@ $(document).ready(function (e) {
 
 
 })
+
+function changehref(){
+    console.log('oh i need to test');
+    $('#patient1').attr('href',"/patientDetails1/?P_id="+patientId);
+	$('#patient2').attr('href',"/patientDetails2/?P_id="+patientId);
+	$('#patient3').attr('href',"/patientDetails3/?P_id="+patientId);
+	$('#patient4').attr('href',"/patientDetails4/?P_id="+patientId);
+}
 
 function forWizard_ecDate(){
     $(".mycheckbox").change(function(){

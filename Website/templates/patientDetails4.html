@@ -1,737 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE HTML>
+<html>
 	<head>
-		<!-- Basic -->
-    	<meta charset="UTF-8" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-    <!--for map add byzyc @0525-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>-->
-        <script src="http://webapi.amap.com/maps?v=1.3&key=c93e1e293e5b1c3dc581f3ff633144d3&plugin=AMap.Autocomplete,AMap.PlaceSearch,AMap.Walking,AMap.Riding"></script>
-        <!--<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>-->
-    <!--for map add byzyc @0525-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>patientDetails4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 
-		<title>首页</title>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/static/test/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/static/test/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<!--<link rel="stylesheet" href="/static/test/css/bootstrap.css">-->
 
-		<!-- Mobile Metas -->
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/static/test/css/magnific-popup.css">
 
-	    <!-- start: CSS file-->
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="/static/test/css/flexslider.css">
 
-		<!-- Vendor CSS-->
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="/static/test/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="/static/test/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="/static/test/js/respond.min.js"></script>
+	<![endif]-->
+
+        <!-- Vendor CSS-->
 		<link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="/static/vendor/skycons/css/skycons.css" rel="stylesheet" />
+		<!--<link href="/static/vendor/skycons/css/skycons.css" rel="stylesheet" />-->
 		<link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
 		<!-- Plugins CSS-->
-		<link href="/static/plugins/bootkit/css/bootkit.css" rel="stylesheet" />
-		<link href="/static/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet" />
-		<link href="/static/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
-		<link href="/static/plugins/xcharts/css/xcharts.min.css" rel="stylesheet" />
+		<!--<link href="/static/plugins/bootkit/css/bootkit.css" rel="stylesheet" />-->
+		<!--<link href="/static/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet" />-->
+		<!--<link href="/static/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />-->
+		<!--<link href="/static/plugins/xcharts/css/xcharts.min.css" rel="stylesheet" />-->
 
-		<link href="/static/plugins/dropzone/css/dropzone.css" rel="stylesheet" />
+		<!--<link href="/static/plugins/dropzone/css/dropzone.css" rel="stylesheet" />-->
 
 		<!-- Theme CSS -->
-		<link href="/static/css/jquery.mmenu.css" rel="stylesheet" />
+		<!--<link href="/static/css/jquery.mmenu.css" rel="stylesheet" />-->
 
-		<!-- Page CSS -->
+        <!-- Page CSS -->
 		<link href="/static/css/style.css" rel="stylesheet" />
 		<link href="/static/css/add-ons.min.css" rel="stylesheet" />
 
-		<!-- end: CSS file-->
-
-		<script src="/static/plugins/modernizr/js/modernizr.js"></script>
-
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<script src="/static/vendor/js/jquery.min.js"></script>
-		<script src="/static/vendor/js/jquery-2.1.1.min.js"></script>
-		<script src="/static/vendor/js/jquery-migrate-1.2.1.min.js"></script>
-		<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-		<!-- Plugins JS-->
-		<script src="/static/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		<!--my css by zyc-->
-
-		<link href="/static/css/mycss1.css" rel="stylesheet" />
+        <link href="/static/css/mycss1.css" rel="stylesheet" />
 		<link href="/static/css/mycss.css" rel="stylesheet" />
         <link rel="stylesheet" href="/static/css/map.css">
-		<!--<link href="/static/css/styles.css" media="all" rel="stylesheet">-->
 
-<!--a, a:visited, a:hover {  }-->
-<!--#container_medicine a.pics:active span { display:block; position:absolute; left:9px; top:192px; z-index:5; height:500px; }-->
-<!--#container_medicine a.pics:focus { border:1px solid #fc0; outline:0; }-->
-<!--#container_medicine a.pics:focus span { display:block; position:absolute; left:9px; top:192px; z-index:5; outline:0; }-->
-<!--#container_medicine span.info { clear:left; display:block; text-align:center; line-height:20px; margin:0; padding:200px 0 0 0; width:600px; text-align:center; color:#eee; z-index:1; }-->
-<!--#container_medicine span.info a { color:#000; }-->
-<!--#container_medicine span.info a:hover { text-decoration:none; }-->
-<style type="text/css">
-#container_medicine { position:relative; max-width:1200px; min-height:800px; margin:10px auto; font-family:verdana, arial, sans-serif; font-size:12px; }
-#container_medicine a.pics { float:left; margin:7px 7px; display:inline; color:#000; text-decoration:none; border:1px solid #000; width:75px; height:75px; cursor:default; }
-#container_medicine a.pics img.thumb { display:block; border:0; }
-#container_medicine a.pics span { display:none; border:0; width:580px; border:1px solid #fff; text-align:center; }
-#container_medicine a.pics span img { margin:10px auto; border:1px solid #000; }
-#container_medicine a.pics:hover { white-space:normal; border:1px solid #fff; }
-#container_medicine a.pics:hover span { display:block; position:absolute; left:320px; top:10px; z-index:10; max-height:500px; max-width:900px;}
-#container_medicine a.pics:active { border:1px solid #fc0; }
-</style>
+
 	</head>
-
 	<body>
-
-		<!-- Start: Header -->
-		<div class="navbar" role="navigation">
-			<div class="container-fluid container-nav">
-				<!-- Navbar Action -->
-				<ul class="nav navbar-nav navbar-actions navbar-left">
-					<li class="visible-md visible-lg"><a href="#" id="main-menu-toggle"><i class="fa fa-th-large"></i></a></li>
-					<li class="visible-xs visible-sm"><a href="#" id="sidebar-menu"><i class="fa fa-navicon"></i></a></li>
-				</ul>
-				<!-- Navbar Left -->
-				<!--<div class="navbar-left">-->
-					<!--&lt;!&ndash; Search Form &ndash;&gt;-->
-					<!--<form class="search navbar-form">-->
-						<!--<div class="input-group input-search">-->
-							<!--<input type="text" class="form-control" name="q" id="q" placeholder="Search...">-->
-							<!--<span class="input-group-btn">-->
-								<!--<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>-->
-							<!--</span>-->
-						<!--</div>-->
-					<!--</form>-->
-				<!--</div>-->
-				<!-- Navbar Right -->
-				<div class="navbar-right">
-					<!-- Notifications -->
-					<ul class="notifications hidden-sm hidden-xs">
-						<li>
-							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
-								<i class="fa fa-tasks"></i>
-								<span class="badge" id="firstTop">1</span>
-							</a>
-							<ul class="dropdown-menu update-menu" role="menu" id="firstContent">
-								<li><a href="#"><i class="fa fa-database bk-fg-primary"></i> Database </a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
-								<i class="fa fa-envelope"></i>
-								<span class="badge" id="message_topSum"></span>
-							</a>
-							<ul class="dropdown-menu" id = "message_top">
-								<li class="dropdown-menu-header">
-									<strong>Messages</strong>
-									<div class="progress progress-xs  progress-striped active">
-										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-											100%
-										</div>
-									</div>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
-								<i class="fa fa-bell"></i>
-								<span class="badge" id="sfSum"></span>
-							</a>
-							<ul class="dropdown-menu list-group">
-								<li class="dropdown-menu-header">
-									<strong>Notifications</strong>
-									<div class="progress progress-xs  progress-striped active">
-										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-											100%
-										</div>
-									</div>
-								</li>
-								<li class="list-item">
-									<a href="/pending/?now=3">
-										<div class="pull-left">
-										   <i class="fa fa-medkit bk-fg-primary"></i>
-										</div>
-										<div class="media-body clearfix">
-											<div style="color:#5cb85c">门诊记录</div>
-											<h6 id="outPat"></h6>
-										</div>
-									</a>
-								</li>
-								<li class="list-item">
-									<a href="/pending/?now=3">
-										<div class="pull-left">
-										   <i class="fa fa-ambulance bk-fg-primary"></i>
-										</div>
-										<div class="media-body clearfix">
-											<div style="color:#f0ad4e">急诊记录</div>
-											<h6 id="emGen"></h6>
-										</div>
-									</a>
-								</li>
-								<li class="list-item">
-									<a href="/pending/?now=3">
-										<div class="pull-left">
-										   <i class="fa fa-hospital-o bk-fg-primary"></i>
-										</div>
-										<div class="media-body clearfix">
-											<div style="color:#d9534f">住院记录</div>
-											<h6 id="inHos"></h6>
-										</div>
-									</a>
-								</li>
-								<li class="list-item-last">
-									<a href="/pending/?now=3">
-									  <h6>尚未处理的随访记录</h6>
-									  <span class="badge" id="sum"></span>
-								   </a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<!-- End Notifications -->
-					<!-- Userbox -->
-					<div class="userbox">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<div class="profile-info">
-								<span class="name" id="userName_s" style="font-size:16px !important">用户</span>
-								<span class="role" id="title_s" style="font-size:16px !important"></span>
-							</div>
-							<i class="fa custom-caret"></i>
-						</a>
-						<div class="dropdown-menu">
-							<ul class="list-unstyled">
-								<li class="dropdown-menu-header bk-bg-white bk-margin-top-15">
-									<div class="progress progress-xs  progress-striped active">
-										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-											60%
-										</div>
-									</div>
-								</li>
-								<li>
-									<a href="/logout/"><i class="fa fa-power-off"></i> 登出</a>
-								</li>
-							</ul>
-						</div>
+	<div class="fh5co-loader"></div>
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container-wrap">
+			<div class="top-menu">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="index.html" style="text-decoration:none">IBreathCare</a></div>
 					</div>
-					<!-- End Userbox -->
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="/index/">首页</a></li>
+							<li class="active"><a href="work.html">Work</a></li>
+							<li class="has-dropdown">
+								<a href="blog.html">Blog</a>
+								<ul class="dropdown">
+									<li><a href="#">Web Design</a></li>
+									<li><a href="#">eCommerce</a></li>
+									<li><a href="#">Branding</a></li>
+									<li><a href="#">API</a></li>
+								</ul>
+							</li>
+							<li><a href="/setting/">设置</a></li>
+						</ul>
+					</div>
 				</div>
-				<!-- End Navbar Right -->
+
 			</div>
 		</div>
-		<!-- End: Header -->
-
-		<!-- Start: Content -->
-		<div class="container-fluid content">
-			<div class="row">
-
-				<!-- Sidebar -->
-				<div class="sidebar">
-					<div class="sidebar-collapse">
-						<!-- Sidebar Header Logo-->
-						<div class="sidebar-header">
-							<img src="/static/img/logo.png" class="img-responsive" alt="" />
-						</div>
-						<!-- Sidebar Menu-->
-						<div class="sidebar-menu">
-							<nav id="menu" class="nav-main" role="navigation">
-								<ul class="nav nav-sidebar"  id="sidebar">
-									<div class="panel-body text-center">
-										<div class="bk-avatar">
-											<img src="/static/img/avatar.jpg" class="img-circle bk-img-60" alt="" />
-										</div>
-										<div class="bk-padding-top-10">
-											<i class="fa fa-circle text-success"></i> <small>用户所属权限组</small>
-										</div>
-									</div>
-									<div class="divider2"></div>
-									<li>
-										<a href="/">
-											<i class="fa fa-laptop" aria-hidden="true"></i><span>首页</span>
-										</a>
-									</li>
-
-									<li>
-										<a href="/pending/">
-											<i class="fa fa-picture-o" aria-hidden="true"></i><span>待处理事项</span>
-										</a>
-									</li>
-									<li class="active">
-										<a href="/patientInfos/">
-											<i class="fa fa-copy" aria-hidden="true"></i><span>患者汇总信息</span>
-										</a>
-									</li>
-									<li class="nav-parent">
-										<a >
-											<i class="fa fa-copy" aria-hidden="true"></i><span>添加随访记录</span>
-										</a>
-										<ul class="nav nav-children">
-											<li>
-												<a href="/add/outpatientInfos/">
-													<span>添加门诊信息</span>
-												</a>
-											</li>
-											<li>
-												<a href="/add/emergencyInfos/">
-													<span>添加急诊信息</span>
-												</a>
-											</li>
-											<li>
-												<a href="/add/hospitalInfos/">
-													<span>添加住院信息</span>
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-parent">
-										<a >
-											<i class="fa fa-copy" aria-hidden="true"></i><span>实验组</span>
-										</a>
-										<ul class="nav nav-children" id="experimentGroup">
-											<li>
-												<a data-toggle="modal" onclick = "addExperimentGroup()" href="#ExperimentGroupDetails">添加实验组</span></a>
-											</li>
-
-										</ul>
-									</li>
-
-									<li id="setting" style="display:none">
-										<a href="/setting/"><i class="fa fa-cog" aria-hidden="true"></i><span>管理面板</span></a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<!-- End Sidebar Menu-->
-					</div>
-					<!-- Sidebar Footer-->
-					<div class="sidebar-footer">
-						<ul class="sidebar-terms">
-							<li><a href="/">Terms</a></li>
-							<li><a href="/">Privacy</a></li>
-							<li><a href="/">Help</a></li>
-							<li><a href="/">About</a></li>
-						</ul>
-						<div class="copyright text-center">
-							<small id="WebName"></small>
-						</div>
-					</div>
-					<!-- End Sidebar Footer-->
-				</div>
-				<!-- End Sidebar -->
-
-				<!-- Main Page -->
-				<div class="main">
-                    <!-- Page Header -->
-                        <div class="page-header row">
-                            <ul id="myTab" class="nav nav-tabs row text-center" >
-                              <li role="presentation" class="active" style="width:120px"><a href="#1">患者详情</a></li>
-                              <li role="presentation" style="width:120px"><a href="#2">家属信息</a></li>
-                              <li role="presentation" style="width:120px" onclick="showAll('1')"><a href="#3">随访记录</a>
-								<span class="badge" id="newAdded" style="position:absolute;top:-1px;right:-1px;
-								background:#d9534f;border-radius:35px;margin-top:5px;margin-right:3px"></span></li>
-								<!--<span class="badge1">+2</span>-->
-                              <!--<li role="presentation" style="width:120px" onclick="showEmergency()"><a href="#4">急诊记录</a></li>-->
-                              <!--<li role="presentation" style="width:120px" onclick="showAll()"><a href="#5">就诊记录</a></li>-->
-                              <li id="testlink1" role="presentation" style="width:120px" onclick="showAPP()"><a href="#4">APP数据</a></li>
-                              <!--<li role="presentation" style="width:120px"><a href="#4">APP数据</a></li>-->
+	</nav>
+	<div class="container-wrap">
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background:#FFFFCC;">
+			   		<div class="overlay-gradient"></div>
+		   			<div class="row">
+                        <div class="mysidebar" style="background:#33FF99;width:15%;height:800px;float:left;">
+                            <ul>
+                                <<li><a href="/patientDetails2/" id="patient2">患者详情</a></li>
+                                <li><a href="#">疾病信息</a></li>
+                                <li><a href="/patientDetails1/" id="patient1">家属信息</a></li>
+                                <li onclick="showAll('1')"><a href="/patientDetails4/" id="patient4">随访记录</a></li>
+                                <li onclick="showAPP()"><a href="/patientDetails3/" id="patient3">APP数据</a></li>
                             </ul>
-							<ul class="nav nav-tabs" role="tablist" id="myTabSmall">
-								<li class="dropdown" style="width:160px">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-										患者及其家属信息 <span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu" role="menu" style="background:#7aa2ca;">
-										<li role="presentation"><a href="#1">患者详情</a></li>
-										<li class="divider" ></li>
-										<li role="presentation"><a href="#2">家属信息</a></li>
-									</ul>
-								</li>
-								<li class="dropdown" style="width:150px">
-									<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-										随访及APP数据 <span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu" role="menu" style="background:#7aa2ca;">
-										<li role="presentation" onclick="showAll('1')"><a href="#3">随访记录</a></li>
-										<li class="divider" ></li>
-										<li role="presentation" onclick="showAPP()"><a href="#4">APP数据</a></li>
-									</ul>
-								</li>
-							</ul>
                         </div>
-                        <!-- End Page Header -->
-                        <div class="row">
-                            <div class="tab-content">
-                            <div class="tab-pane fade in active" id="1">
-                                <div class="row">
-									<form class="form-horizontal" id = "PatientInfo" method="post" role="form">
-                                        <div class="col-md-6">
-                                            <div class="panel">
-                                                <div class="panel-heading bk-bg-primary">
-                                                    <h6><i class="fa fa-indent red"></i>基本信息</h6>
-                                                </div>
-								                <div class="panel-body">
-										<div class="form-group" style="display:none;">
-											<label class="col-md-3 control-label">编号</label>
-											<div class="col-md-9">
-												<input type="text" name="id" class="form-control" readonly>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">患者编号</label>
-											<div class="col-md-9">
-												<input type="text" name="P_id" class="form-control" placeholder="Text">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">姓名</label>
-											<div class="col-md-9">
-												<input type="text" name="name" class="form-control" placeholder="Email address">
-											</div>
-										</div>
-                                         <div class="form-group">
-											<label class="col-md-3 control-label">签署知情同意书</label>
-											<div class="col-md-9">
-												<div class="radio-custom radio-inline">
-													<input type="radio" name="sign" value="1">
-													<label> 是</label>
-												</div>
-												<div class="radio-custom radio-inline">
-													<input type="radio" name="sign" value="2">
-													<label> 否</label>
-												</div>
-											</div>
-										</div>
-                                         <div class="form-group">
-											<label class="col-md-3 control-label">身份证号</label>
-											<div class="col-md-9">
-												<input type="text" name="IDCardNum" class="form-control" placeholder="身份证号">
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label class="col-md-3 control-label">就医时间</label>
-											<div class="col-md-9">
-												<input type="date" name="registerTime" class="form-control" placeholder="请选择">
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label class="col-md-3 control-label">出生日期</label>
-											<div class="col-md-9">
-												<input type="date" name="birthday" class="form-control" placeholder="请选择">
-											</div>
-										</div>
-                                         <div class="form-group">
-											<label class="col-md-3 control-label">性别</label>
-											<div class="col-md-9">
-												<div class="radio-custom radio-inline">
-													<input type="radio" name="sex" value="1">
-													<label> 男</label>
-												</div>
-												<div class="radio-custom radio-inline">
-													<input type="radio" name="sex" value="2">
-													<label> 女</label>
-												</div>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">年龄</label>
-											<div class="col-md-9">
-												<input type="text" name="age" class="form-control" placeholder="age">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">民族</label>
-											<div class="col-md-9">
-												<input type="text" name="nation" class="form-control" placeholder="nation">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">身高</label>
-											<div class="col-md-9">
-												<input type="text" name="height" class="form-control" placeholder="height">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">体重</label>
-											<div class="col-md-9">
-												<input type="text" name="weight" class="form-control" placeholder="weight">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">学历</label>
-											<div class="col-md-9">
-												<select class="form-control" name="education">
-                                                    <option value="1">小学</option>
-                                                    <option value="2">初中</option>
-                                                    <option value="3">高中/中专</option>
-                                                    <option value="4">大学专科（大专）</option>
-                                                    <option value="5">大学本科（大本）</option>
-                                                    <option value="6">研究生（硕士/博士）</option>
-                                              </select>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">职业</label>
-											<div class="col-md-9">
-												<select class="form-control" name="career">
-                                                    <option value="1">农、林、牧、渔、水利业</option>
-                                                    <option value="2">工业</option>
-                                                    <option value="3">地质普查和勘探业</option>
-                                                    <option value="4">建筑业</option>
-                                                    <option value="5">交通运输业、邮电通信业</option>
-                                                    <option value="6">商业、公共饮食业、物资供应和仓储业</option>
-                                                    <option value="7">房地产管理、公用事业、居民服务和咨询服务业</option>
-                                                    <option value="8">卫生、体育和社会福利事业</option>
-                                                    <option value="9">教育、文化艺术和广播电视业</option>
-                                                    <option value="10">科学研究和综合技术服务业</option>
-                                                    <option value="11">金融、保险业</option>
-                                                    <option value="12">国家机关、党政机关和社会团体</option>
-                                                    <option value="13">其他行业</option>
-                                              </select>
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label class="col-md-3 control-label">婚姻状况</label>
-											<div class="col-md-9">
-												<select class="form-control" name="marriage">
-                                                    <option value="1">未婚</option>
-                                                    <option value="2">已婚</option>
-                                                    <option value="3">离异</option>
-                                                    <option value="4">丧偶</option>
-                                              </select>
-											</div>
-										</div>
-
-                                     </div>
-                                     </div>
-                                     </div>
-                                <div class="col-md-6">
-                                    <div class="panel">
-                                        <div class="panel-heading bk-bg-primary">
-                                            <h6><i class="fa fa-indent red"></i>其他信息</h6>
-                                        </div>
-                                        <div class="panel-body">
-
-                                        <div class="form-group">
-											<label class="col-md-3 control-label">家庭住址</label>
-											<div class="col-md-9">
-												<!--<input type="text" name="homeAddr" class="form-control">-->
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" name="homeAddr" readonly>
-                                                    <span class="input-group-btn">
-                                                        <button class="btn btn-default" type="button" onclick="showAddr('homeAddr')" style="width:50px;padding-left:5px;padding-right:5px">
-                                                            修改
-                                                        </button>
-                                                    </span>
-                                                </div>
-											</div>
-										</div>
-                                        <div class="form-group" id="homeAddr" style="display:none">
-											<label class="col-md-3 control-label"></label>
-											<div class="col-md-2" style="margin-left:padding-left:0;padding-right:0"  >
-                                                <select class="form-control" name="province_h" id="province_h"></select>
-                                            </div>
-                                            <div class="col-md-2" style="padding-left:0;padding-right:0" >
-                                                <select class="form-control" name="city_h" id="city_h"></select>
-                                            </div>
-                                            <div class="col-md-2" style="padding-left:0;padding-right:0" >
-                                                <select class="form-control" name="county_h" id="county_h"></select>
-                                            </div>
-                                            <div class="col-md-2" style="padding-left:0;padding-right:0" >
-                                                <input type="text" class="form-control" name="detail_h" id="detail_h">
-                                            </div>
-										</div>
-
-                                        <div class="form-group">
-											<label class="col-md-3 control-label">籍贯</label>
-											<div class="col-md-9">
-												<div class="input-group">
-                                                    <input type="text" class="form-control" name="birthAddr" readonly>
-                                                    <span class="input-group-btn">
-                                                        <button class="btn btn-default" type="button" onclick="showAddr('birthAddr')" style="width:50px;padding-left:5px;padding-right:5px">
-                                                            修改
-                                                        </button>
-                                                    </span>
-											    </div>
-										    </div>
-                                        </div>
-										<div class="form-group" id="birthAddr" style="display:none">
-											<label class="col-md-3 control-label"></label>
-											<div class="col-md-2" style="margin-left:padding-left:0;padding-right:0"  >
-                                                <select class="form-control" name="province" id="province"></select>
-                                            </div>
-                                            <div class="col-md-2" style="padding-left:0;padding-right:0" >
-                                                <select class="form-control" name="city" id="city"></select>
-                                            </div>
-                                            <div class="col-md-2" style="padding-left:0;padding-right:0" >
-                                                <select class="form-control" name="county" id="county"></select>
-                                            </div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">经常活动地址</label>
-											<div class="col-md-9">
-												<input type="text" name="activityAddr1" class="form-control">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">经常活动地址</label>
-											<div class="col-md-9">
-												<input type="text" name="activityAddr2" class="form-control">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">最大活动半径</label>
-											<div class="col-md-9">
-												<input type="text" name="actionAddr" class="form-control" readonly>
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">固定电话</label>
-											<div class="col-md-9">
-												<input type="text" name="telephone" class="form-control">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">手机</label>
-											<div class="col-md-9">
-												<input type="text" name="cellphone" class="form-control" placeholder="cellphone">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">同住人联系方式</label>
-											<div class="col-md-9">
-												<input type="text" name="partnerPhone" class="form-control">
-											</div>
-										</div>
-                                        <div class="form-group">
-											<label class="col-md-3 control-label">医疗支付方式</label>
-                                            <div class="col-md-9">
-												<select class="form-control" name="payment">
-                                                    <option value="1">城镇居民基本保险</option>
-                                                    <option value="2">城镇职工基本保险</option>
-                                                    <option value="3">新型农村合作医疗</option>
-                                                    <option value="4">商业医疗保险</option>
-                                                    <option value="5">全公费</option>
-                                                    <option value="6">全自费</option>
-                                                    <option value="7">其他</option>
-                                              </select>
-											</div>
-										</div>
-
-										<div class="form-group">
-											<label class="col-md-3 control-label">舒张压</label>
-											<div class="col-md-9">
-												<input type="text" name="diastolicPressure" class="form-control">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">收缩压</label>
-											<div class="col-md-9">
-												<input type="text" name="systolicPressure" class="form-control">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label">颈围</label>
-											<div class="col-md-9">
-												<input type="text" name="neckCircu" class="form-control" data-toggle="tooltip" data-placement="top" title="指经喉结节点的颈部水平围长">
-												<span class="help-block">指经喉结节点的颈部水平围长</span>
-											</div>
-										</div>
-                                    <div class="pull-right" style="margin-right:50px;">
-                                        <button type="button" id="submitPatientInfobt" class="btn btn-primary">保存</button>
-                                    </div>
-                                     </div>
-                                     </div>
-                                     </div>
-                                </form>
-                                </div>
-                                <div class="row">
-                                    <form class="form-horizontal" id = "DiseaseType" method = "post" role="form">
-                                        <div class="col-md-6">
-                                            <div class="panel">
-                                                <div class="panel-heading bk-bg-primary">
-                                                    <h6><i class="fa fa-indent red"></i>疾病信息</h6>
-                                                </div>
-								                <div class="panel-body">
-                                                    <div class="row" id="diseasePanel">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <button class="btn btn-default" type="button" onclick="showAddr('newDiv')" style="width:50px;padding-left:5px;padding-right:5px;margin-right:20px">
-                                                            添加
-                                                        </button>
-                                                    </div>
-                                                    <div class="form-group" id="newDiv" style="display:none">
-                                                        <label class="col-md-2 control-label">新疾病</label>
-                                                        <div class="col-md-6" id="newD">
-
-                                                        </div>
-                                                        <button class="btn btn-default" type="button" onclick="showAddr('subDiv')" style="padding-left:5px;padding-right:5px;margin-right:20px">
-                                                            添加二级诊断
-                                                        </button>
-
-
-                                                    </div>
-
-                                                    <div class="form-group" id="subDiv" style="display:none">
-                                                        <label class="col-md-2 control-label">诊断</label>
-                                                        <div class="col-md-6" id="subD">
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="pull-right" style="margin-right:10px;">
-                                                        <button type="button" id="submitDiseasebt" class="btn btn-primary">保存</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="2">
-                                <div class="panel">
-                                    <div class="panel-heading bk-bg-primary">
-                                        <h6><i class="fa fa-table red"></i><span class="break"></span>家属信息</h6>
-                                        <div class="panel-actions">
-                                            <!--<a href="#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>-->
-                                            <a href="#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
-                                            <!--<a href="#" class="btn-close"><i class="fa fa-times"></i></a>-->
-                                        </div>
-                                    </div>
-                                    <div class="panel-body" style="margin:0 auto;max-width:1000px">
-                                        <div class="row table-responsive">
-                                            <table class="table table-bordered table-hover table-entire" id="RelationInfoTable">
-                                                <thead>
-                                                <tr>
-                                                    <th class="tlabel6" style="text-align:center;width:45px">编号</th>
-                                                    <th class="table-small tlabel6" style="text-align:center">姓名</th>
-                                                    <th class="tlabel6" style="text-align:center;width:45px;">性别</th>
-                                                    <th class="table-small tlabel6" style="text-align:center;">固定电话</th>
-                                                    <th class="table-small tlabel6" style="text-align:center;">手机</th>
-                                                    <th class="table-small tlabel6" style="text-align:center;">微信</th>
-                                                    <th class="table-small tlabel6" style="text-align:center;">邮箱</th>
-                                                    <th class="tlabel6" style="text-align:center">住址</th>
-                                                    <th class="tlabel6" style="text-align:center;width:45px;">编辑</th>
-                                                    <th class="tlabel6" style="text-align:center;width:45px">删除</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                </tbody>
-                                            </table>
-
-                                            <div class="row col-lg-4 col-md-4 text-left">
-                                                <a  data-toggle="modal" onclick="addRelationInfo()" href="#RelationInfoDetails" class="mylabel"><i class="glyphicon glyphicon-plus "></i> 添加新的家属信息</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="3">
+                        <div class="mycontent" style="background:white;width:85%;margin-left:15%;">
+                            <div>
                                 <div style="text-indent: 1em;margin: 8px auto;position:relative;max-width:2000px;width: 1200px;">
                                     <a  data-toggle="modal" onclick="addInfo()" href="#OutPatientServiceInfoDetails" class="mylabel"
                                         style="color:#5cb85c!important;display:inline"><i class="glyphicon glyphicon-plus"></i> 新门诊</a>
@@ -767,212 +144,20 @@
                                 <div class="timeline animated" id="follow_up">
                                 </div>
                             </div>
-
-                            <div class="tab-pane fade" id="4">
-                                <div class="panel col-xs-12">
-                                    <div class="panel-heading bk-bg-primary">
-										<h6><i class="fa fa-tags red "></i>患者状况</h6>
-										<div class="panel-actions" style="display:block;">
-											<a onclick="updown($(this))"><i class="fa fa-chevron-up"></i></a>
-										</div>
-									</div>
-                                    <div class="panel-body" style="margin:0 auto;max-width:1000px;">
-                                        <div id="calendar">
-
-                                        </div>
-                                    </div>
-							    </div>
-
-                                <div class="panel col-xs-12">
-                                    <div class="panel-heading bk-bg-primary">
-										<h6><i class="fa fa-tags red "></i>患者活动轨迹</h6>
-										<div class="panel-actions" style="display:block;">
-											<a onclick="updown($(this))"><i class="fa fa-chevron-up"></i></a>
-										</div>
-									</div>
-                                    <div class="panel-body" style="margin:0 auto;max-width:1200px;height:550px">
-                                        <div id="container">
-
-                                        </div>
-                                    </div>
-							    </div>
-
-								<div class="panel col-xs-12">
-									<div class="panel-heading bk-bg-primary">
-										<h6><i class="fa fa-tags red "></i>CAT</h6>
-										<div class="panel-actions" style="display:block;">
-											<a onclick="updown($(this))"><i class="fa fa-chevron-up"></i></a>
-										</div>
-									</div>
-									<div class="panel-body">
-										<div id="bar-1" style="height: 400px;margin:0 auto"></div>
-									</div>
-								</div>
-								<div class="panel col-xs-12">
-									<div class="panel-heading bk-bg-primary">
-										<h6><i class="fa fa-tags red "></i>MRC</h6>
-										<div class="panel-actions" style="display:block;">
-											<a onclick="updown($(this))"><i class="fa fa-chevron-up"></i></a>
-										</div>
-									</div>
-									<div class="panel-body">
-										<div id="bar-2" style="height: 400px;margin:0 auto"></div>
-									</div>
-								</div>
-								<div class="panel col-xs-12">
-									<div class="panel-heading bk-bg-primary">
-										<h6><i class="fa fa-tags red "></i>PM暴露量</h6>
-										<div class="panel-actions" style="display:block;">
-											<a onclick="updown($(this))"><i class="fa fa-chevron-up"></i></a>
-										</div>
-									</div>
-									<div class="panel-body">
-										<div id="bar-3" style="height: 400px;margin:0 auto"></div>
-									</div>
-								</div>
-								<!--<div class="panel col-xs-12">-->
-									<!--<div class="panel-heading bk-bg-primary">-->
-										<!--<h6><i class="fa fa-tags red "></i>换药记录</h6>-->
-										<!--<div class="panel-actions" style="display:block;">-->
-											<!--<a onclick="updown($(this))"><i class="fa fa-chevron-up"></i></a>-->
-										<!--</div>-->
-									<!--</div>-->
-									<!--<div class="panel-body">-->
-										<!--<div class="row table-responsive" style="margin:0 auto;max-width:900px">-->
-											<!--<table class="table table-bordered table-hover table-entire" id="medicineChange">-->
-												<!--<caption class="mylabel"></caption>-->
-												<!--<thead></thead>-->
-												<!--<tbody></tbody>-->
-											<!--</table>-->
-										<!--</div>-->
-									<!--</div>-->
-								<!--</div>-->
-								<div class="panel col-xs-12">
-									<div class="panel-heading bk-bg-primary">
-										<h6><i class="fa fa-tags red "></i>换药记录</h6>
-										<div class="panel-actions" style="display:block;">
-											<a onclick="updown($(this))"><i class="fa fa-chevron-up"></i></a>
-										</div>
-									</div>
-									<div class="panel-body">
-										<div id="container_medicine">
-                                            <div class="row table-responsive col-md-3" style="margin:0 auto;max-width:280px;padding-left:0;padding-right:0">
-											<table class="table table-bordered"  id="medicineChange">
-												<caption class="mylabel"></caption>
-												<thead>
-                                                    <tr>
-                                                        <th class="table-small tlabel6" style="text-align:center;width:70px;color:black">日期</th>
-                                                        <th class="table-small tlabel6" style="text-align:center;width:50px;color:black">换药前</th>
-                                                        <th class="table-small tlabel6" style="text-align:center;width:75px;color:black">换药后</th>
-                                                    </tr>
-                                                </thead>
-												<tbody>
-                                                <tr>
-                                                    <td style="vertical-align:middle;">20170503
-
-                                                    </td>
-                                                    <td>
-                                                        <a class="pics" href="http://www.niutuku.com"><img class="thumb" src="/media/MR/IMG_20170523_214903.jpg" alt="Warm to Cold" width="75px" height="75px"/>
-											<span><img src="/media/MR/IMG_20170523_214903.jpg" width="800px" height="570px" alt="Warm to Cold" title="Warm to Cold" /><br />Warm to Cold</span> </a>
-                                                    </td>
-                                                    <td>
-                                                        <a class="pics" href="http://www.niutuku.com"><img class="thumb" src="/media/MR/IMG_20170523_214903.jpg" alt="Warm to Cold" width="75px" height="75px"/>
-											<span><img src="/media/MR/IMG_20170523_214903.jpg" width="800px" height="570px" alt="Warm to Cold" title="Warm to Cold" /><br />Warm to Cold</span> </a>
-                                                    </td>
-                                                </tr></tbody>
-											</table>
-										</div>
-
-										</div>
-									</div>
-								</div>
-                            </div>
-                        	</div>
-                		</div>
-            <!-- End Main Page -->
-				</div>
-			</div>
-		</div><!--/container-->
-
-
-        <div class="modal fade" id="RelationInfoDetails">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content ">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">家属信息</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div>
-                        <form class="form-horizontal" id = "RelationInfo" method="post" role="form">
-							{% csrf_token %}
-                            <div class="row ">
-                                <div class="form-group col-lg-6 col-md-6 myblockposition">
-                                    <label class="col-sm-3 control-label mylabel">姓名</label>
-                                    <div class="col-sm-6" >
-                                      <input type="text" class="form-control myinput" name="name">
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 myblockposition">
-                                    <label class="col-sm-3 control-label mylabel">编号</label>
-                                    <div class="col-sm-6">
-                                      <input type="text" class="form-control myinput" name="R_id" readonly>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="form-group col-lg-6 col-md-6 myblockposition">
-                                    <label class="col-sm-3 control-label mylabel">固定电话</label>
-                                    <div class="col-sm-6" >
-                                      <input type="text" class="form-control myinput" name="telephone">
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 myblockposition">
-                                    <label class="col-sm-3 control-label mylabel">手机</label>
-                                    <div class="col-sm-6">
-                                      <input type="text" class="form-control myinput" name="cellphone">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="form-group col-lg-6 col-md-6 myblockposition">
-                                    <label class="col-sm-3 control-label mylabel">微信</label>
-                                    <div class="col-sm-6" >
-                                      <input type="text" class="form-control myinput" name="weChat">
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 myblockposition">
-                                    <label class="col-sm-3 control-label mylabel">邮箱</label>
-                                    <div class="col-sm-6">
-                                      <input type="text" class="form-control myinput" name="mail">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row ">
-
-                                <div class="form-group col-lg-6 col-md-6 myblockposition">
-                                    <label class="col-sm-3 control-label mylabel">性别</label>
-                                    <div class="col-sm-6">
-                                      <input type="text" class="form-control myinput" name="sex">
-                                    </div>
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 myblockposition">
-                                    <label class="col-sm-3 control-label mylabel">家庭住址</label>
-                                    <div class="col-sm-6" >
-                                      <input type="text" class="form-control myinput" name="homeAddr">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal" >关闭</button>
-                        <button type="button" id="submitRelationInfobt" class="btn btn-primary" data-dismiss="modal">保存</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+
+	</div><!-- END container-wrap -->
+
+
+	</div>
+    <div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
 
 
         <div class="modal fade" id="ClinicDetails">
@@ -4818,6 +4003,27 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+
+
+	<!-- jQuery -->
+	<script src="/static/test/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="/static/test/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="/static/test/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="/static/test/js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="/static/test/js/jquery.flexslider-min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="/static/test/js/jquery.magnific-popup.min.js"></script>
+	<script src="/static/test/js/magnific-popup-options.js"></script>
+	<!-- Counters -->
+	<script src="/static/test/js/jquery.countTo.js"></script>
+	<!-- Main -->
+	<script src="/static/test/js/main.js"></script>
+
+
 		<!-- start: JavaScript-->
 
 		<script src="/static/plugins/dropzone/js/dropzone.min.js"></script>
@@ -4849,21 +4055,12 @@
 		<!-- Pages JS -->
         <script src="/static/js/pages/tools.js"></script>
 		<!--<script type="text/javascript" src="/static/js/pages/main.js"></script>-->
-        <script src="/static/js/pages/AEType.js"></script>
-        <script src="/static/js/pages/areaSelect.js"></script>
-        <script src="/static/js/pages/patientDetail.js"></script>
-		<script src="/static/js/pages/group_sidebar.js"></script>
-		<script src="/static/js/pages/setting_sidebar.js"></script>
-        <script src="/static/js/pages/calendar.js"></script>
-        <script src="/static/js/pages/Appinfo.js"></script>
-		<script src="/static/js/pages/setting_top.js"></script>
 
-        <script src="/static/js/pages/map.js"></script>
-        <script src="/static/js/pages/typeSelect.js"></script>
-        <!--<script src="/static/js/pages/charts-xcharts.js"></script>-->
+        <script src="/static/js/pages/patientDetails5.js"></script>
+
 
 		<!-- end: JavaScript-->
 
 	</body>
-
 </html>
+

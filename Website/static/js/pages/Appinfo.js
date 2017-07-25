@@ -1,7 +1,10 @@
 function showAPP(){
     calendar();
     showMap();
-    var width = $(window).width() * 0.75;
+    //var width = $(window).width() * 0.75;//图表的宽度
+    var width = $(".mycontent").width()*0.75;
+    console.log("width "+width);
+    console.log("oh no");
     $("#bar-1").width(width);
     $("#bar-2").width(width);
     $("#bar-3").width(width);

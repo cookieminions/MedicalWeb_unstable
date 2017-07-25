@@ -12,6 +12,18 @@ from django.views.decorators.csrf import csrf_exempt
 def test(request):
     return render(request,"test.html")
 
+def patientDetails1(request):
+    return render(request,"patientDetails1.html")
+
+def patientDetails2(request):
+    return render(request,"patientDetails2.html")
+
+def patientDetails3(request):
+    return render(request,"patientDetails3.html")
+
+def patientDetails4(request):
+    return render(request,"patientDetails4.html")
+
 @login_required
 def index(request):
     return render(request,"index.html")
